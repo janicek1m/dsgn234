@@ -1,0 +1,45 @@
+body {
+    background-color: #EDE1BB;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    position: relative;
+    width: 65vmin;
+    height: 80vmin;
+}
+
+.notecard {
+    font-family: 'Gaegu', cursive;
+    line-height: 37.5px;
+    position: absolute;
+    padding: 15px 50px 15px 50px;
+    margin: 0px 10px 0px 10px;
+    width: 120%;
+    font-size: 40px;
+    background-color: var(--color);
+    transition: transform 0.35s ease-out;
+    transform: translate(var(--x), var(--y)) scale(0.35) rotate(var(--angle));
+}
+
+.notecard:hover {
+    transform: translate(var(--x), var(--y)) scale(1) rotate(0deg);
+    z-index: 1;
+}
+
+.notecard:hover:before {
+    opacity: 1;
+}
+
+.notecard:before {
+    content: "";
+    display: block;
+    background-color: var(--color);
+}
+
+.notecard:after {
+    display: block;
+    font-size: 2.5vmin;
+    text-align: center;
+}

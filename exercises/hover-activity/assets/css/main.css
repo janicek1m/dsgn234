@@ -1,0 +1,92 @@
+
+.quote {
+    margin-top: 17.5%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+body {
+    font-family: didot, serif;
+    background-color: #E0C9A6;
+}
+
+.ocean {
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+  
+.ocean:hover {
+    background-color: rgb(98, 130, 219);
+}
+  
+.gradient-fill {
+    background: -webkit-linear-gradient(#000, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.8s ease;
+}
+  
+.gradient-fill:hover {
+    background: -webkit-radial-gradient(#aff5a1, #9dc595, #E3E9E2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.waterdrop-cursor {
+    color: black;
+  }
+  
+.waterdrop-cursor {
+    cursor: url(../imgs/drop.png), auto;
+}
+
+.no:hover {
+    color:#e28683;
+    text-decoration: underline;
+}
+
+
+.clouds:hover ~ #imagesToFadeIn img {
+    opacity: 1;
+}
+
+#imagesToFadeIn img {
+   opacity: 0;
+   transition: all .3s ease-in;
+}
+
+#imagesToFadeIn img:nth-child(2) {
+    transition-delay: .1s;
+}
+
+#imagesToFadeIn img:nth-child(3) {
+    transition-delay: .2s;
+}
+#imagesToFadeIn img:nth-child(4) {
+    transition-delay: .3s;
+}
+#imagesToFadeIn img:nth-child(5) {
+    transition-delay: .4s;
+}
+
+#imagesToFadeIn img:nth-child(6) {
+    transition-delay: .5s;
+}
+
+#imagesToFadeIn img:nth-child(7) {
+    transition-delay: .6s;
+}
+
+#imagesToFadeIn img:nth-child(8) {
+    transition-delay: .7s;
+}
+
+.ocean-text:hover{
+  background-color: #E0C9A6;
+  color: rgb(98, 130, 219);
+}

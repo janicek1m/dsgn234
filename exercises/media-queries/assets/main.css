@@ -1,0 +1,78 @@
+
+body {
+    background-color:  #cf6a6a;
+    font-family:  monospace;
+    padding: 50px;
+    color:rgb(231, 231, 231);
+  }
+
+.title {
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    body {
+      background-color: rgb(231, 231, 231);
+      color:  #cf6a6a;
+    }
+  }
+
+
+@media (max-height: 650px) {
+    body {
+      background-color: rgb(120, 150, 248);
+      color:rgb(231, 231, 231);
+    }
+}
+
+/* Phone breakpoint */
+@media (max-width: 767px) {
+    body {
+        background-color: rgb(103, 180, 157);
+        color:rgb(231, 231, 231);
+        font-size: 20px;
+    }
+  }
+
+/* Tablet breakpoint */
+@media (min-width: 768px) {
+    body {
+      font-size: 40px;
+    }
+  }
+  
+/* Desktop breakpoint */
+  @media (min-width: 992px) {
+    body {
+      font-size: 50px;
+    }
+
+    h1 {
+        font-size: 150px;
+    }
+
+    h2 {
+        font-size: 125px;
+    }
+
+    h1, h2 {
+        font-weight: normal;
+    }
+  }
+  
+  /* Wide screen breakpoint */
+  @media (min-width: 1200px) {
+    body {
+      font-size: 60px;
+    }
+  }
+
+  .container {
+      max-width: 700px;
+      margin: 0 auto;
+  }
+
+
+img {
+    max-width: 100%;
+  }
