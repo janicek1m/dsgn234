@@ -45,3 +45,41 @@ body {
     font-size: 2.5vmin;
     text-align: center;
 }
+
+.cursor-one {
+    cursor: url(../imgs/cursor-one.png), auto;
+  }
+
+.cursor-two {
+    cursor: url(../imgs/cursor-two.png), auto;
+}
+
+.cursor-three {
+    cursor: url(../imgs/cursor-three.png), auto;
+}
+
+.cursor-four {
+    cursor: url(../imgs/cursor-four.png), auto;
+}
+
+.cursor-five {
+    cursor: url(../imgs/cursor-five.png), auto;
+  }
+
+.cursor-six {
+    cursor: url(../imgs/cursor-six.png), auto;
+}
+
+.cursor-seven {
+    cursor: url(../imgs/cursor-seven.png), auto;
+}
+
+.cursor-eight {
+    cursor: url(../imgs/cursor-eight.png), auto;
+}
+  
+.cursor-nine {
+    cursor: url(../imgs/cursor-nine.png), auto;
+}
+  
+  
