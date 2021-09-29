@@ -18,16 +18,15 @@ body {
     margin: 0px 10px 0px 10px;
     width: 120%;
     font-size: 40px;
+    filter: sepia(30%) brightness(0.9) saturate(90%);
     background-color: var(--color);
     transition: transform 0.35s ease-out;
     transform: translate(var(--x), var(--y)) scale(0.35) rotate(var(--angle));
-    filter: sepia(30%) brightness(0.9) saturate(90%);
 }
 
 .notecard:hover {
     transform: translate(var(--x), var(--y)) scale(1) rotate(0deg);
     z-index: 1;
-    filter: sepia(0%);
 }
 
 .notecard:hover:before {
