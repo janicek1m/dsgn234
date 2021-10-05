@@ -190,17 +190,7 @@ footer {
 /* Imported Fonts */
 @font-face {
   font-family: "Hiragino Sans GB";
-  src: url("//db.onlinewebfonts.com/t/3b2646a48566403a55f62ceddbecbe18.eot");
-  src: url("//db.onlinewebfonts.com/t/3b2646a48566403a55f62ceddbecbe18.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/3b2646a48566403a55f62ceddbecbe18.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/3b2646a48566403a55f62ceddbecbe18.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/3b2646a48566403a55f62ceddbecbe18.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/3b2646a48566403a55f62ceddbecbe18.svg#Hiragino Sans GB")
-      format("svg");
+  src: url("../fonts/Hiragino-Sans-GB-W3.otf") format("opentype");
 }
 
 @font-face {
