@@ -1,0 +1,189 @@
+svg {
+  position: absolute;
+  top: -2.5vw;
+  right: 20vw;
+  bottom: 0;
+  max-width: 100%;
+}
+
+svg:hover {
+  fill: #fec165;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  display: table;
+  width: 100%;
+  background-color: #202124;
+  height: 100vh;
+}
+
+h1 {
+  position: absolute;
+  display: block;
+  margin: 0;
+  bottom: 20px;
+  left: 10px;
+  font-family: "metropolis-bold";
+  color: #202124;
+  font-size: 400px;
+  transition: 0.5s;
+}
+
+h1:hover {
+  color: #fec165;
+}
+
+.fade-in {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+}
+
+@font-face {
+  font-family: "metropolis-bold";
+  src: url("../fonts/Metropolis-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "titillium-web";
+  src: url("../fonts/TitilliumWeb-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+article {
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+.content {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+p,
+ul {
+  color: #202124;
+  font-size: 22px;
+  font-family: "titillium-web";
+}
+
+blockquote {
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  height: auto;
+}
+
+.flex-child {
+  flex: 1;
+  align-items: center;
+}
+
+.flex-child:first-child {
+  margin-right: 40px;
+}
+
+figure {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  padding-top: 15px;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-family: "titillium-web";
+  text-align: left;
+  caption-side: bottom;
+  word-wrap: break-word;
+  height: auto;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  position: relative;
+  display: block;
+  padding-right: 30%;
+  margin: 0;
+  bottom: 20px;
+  left: 0px;
+  font-family: "metropolis-bold";
+  color: #202124;
+  font-size: 75px;
+  transition: 0.5s;
+}
+
+h2:hover {
+  color: #fec165;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+td,
+th {
+  padding: 5px 5px 5px 5px;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+h3 {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  left: 0px;
+  font-family: "metropolis-bold";
+  color: #202124;
+  font-size: 30px;
+}
+
+.top {
+  position: relative;
+  left: 95vw;
+  width: 30px;
+}

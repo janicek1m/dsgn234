@@ -1,0 +1,214 @@
+.content {
+  margin-top: 5vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  background-color: rgb(255, 255, 255);
+}
+
+p,
+ul {
+  font-family: "Hiragino Sans GB";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+figure {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+figcaption {
+  display: table-caption;
+  text-align: left;
+  caption-side: bottom;
+  font-family: "Hiragino Sans GB";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1.4;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-family: "charterbold";
+  font-size: 2.5em;
+  letter-spacing: 0;
+}
+
+h2 {
+  font-family: "charterbold";
+  font-size: 2em;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+h3 {
+  font-family: "charterbold";
+  font-size: 1.5em;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+}
+
+.flex-child img {
+  height: 250px;
+}
+
+.flex-child:first-child {
+  margin-right: 25px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+td,
+th {
+  padding: 5px 5px 5px 5px;
+  font-family: "Hiragino Sans GB";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+svg {
+  position: absolute;
+  top: -2.5vw;
+  right: 20vw;
+  bottom: 0;
+  max-width: 100%;
+}
+
+svg:hover {
+  fill: #fec165;
+}
+
+.top {
+  position: fixed;
+  bottom: 2vw;
+  right: 21.25vw;
+  width: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    margin-top: 2vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  svg {
+    top: -45px;
+    right: 1vw;
+    transform: scale(0.75);
+  }
+
+  .top {
+    right: 3vw;
+  }
+}
+
+article {
+  margin-bottom: 2.5em;
+}
+footer {
+  margin-bottom: 10em;
+}
+@media only screen and (max-width: 600px) {
+  .content {
+    margin-top: 2vw;
+    margin-left: 5vw;
+    margin-right: 55vw;
+  }
+  svg {
+    top: -20px;
+    right: 2vw;
+    transform: scale(0.8);
+  }
+
+  .top {
+    right: 3vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    margin-top: 2vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  svg {
+    top: -20px;
+    right: 2vw;
+    transform: scale(0.8);
+  }
+
+  .top {
+    right: 3vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .content {
+    margin-top: 2vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
+  svg {
+    position: absolute;
+    top: -2.5vw;
+    right: 20vw;
+    bottom: 0;
+    max-width: 100%;
+  }
+
+  .top {
+    right: 21vw;
+  }
+}
+
+/* Imported Fonts */
+@font-face {
+  font-family: "Hiragino Sans GB";
+  src: url("//db.onlinewebfonts.com/t/3b2646a48566403a55f62ceddbecbe18.eot");
+  src: url("//db.onlinewebfonts.com/t/3b2646a48566403a55f62ceddbecbe18.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/3b2646a48566403a55f62ceddbecbe18.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/3b2646a48566403a55f62ceddbecbe18.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/3b2646a48566403a55f62ceddbecbe18.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/3b2646a48566403a55f62ceddbecbe18.svg#Hiragino Sans GB")
+      format("svg");
+}
+
+@font-face {
+  font-family: "charterbold";
+  src: url("../fonts/charter_bold-webfont.eot");
+  src: url("../fonts/charter_bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/charter_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
