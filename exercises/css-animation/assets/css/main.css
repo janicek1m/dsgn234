@@ -1,0 +1,232 @@
+.content {
+  position: absolute;
+  top: 10%;
+  left: 27.5%;
+}
+svg {
+  padding: 10px 10px 10px 10px;
+}
+
+@keyframes fall-row-one {
+  0% {
+    transform: translateY(0px);
+    animation-timing-function: cubic-bezier(0.66, 0, 1, 0.72);
+  }
+  45% {
+    transform: translateY(650px);
+  }
+  50% {
+    transform: translateY(700px);
+  }
+  70% {
+    transform: translateY(400px);
+  }
+  80% {
+    transform: translateY(650px);
+  }
+  85% {
+    transform: translateY(700px);
+  }
+  90% {
+    transform: translateY(550px);
+  }
+
+  95% {
+    transform: translateY(650px);
+  }
+
+  100% {
+    transform: translateY(700px);
+  }
+}
+
+@keyframes fall-row-two {
+  0% {
+    transform: translateY(0px);
+    animation-timing-function: cubic-bezier(0.66, 0, 1, 0.72);
+  }
+  45% {
+    transform: translateY(500px);
+  }
+  50% {
+    transform: translateY(530px);
+  }
+  70% {
+    transform: translateY(420px);
+  }
+  80% {
+    transform: translateY(500px);
+  }
+  85% {
+    transform: translateY(530px);
+  }
+  90% {
+    transform: translateY(480px);
+  }
+  100% {
+    transform: translateY(530px);
+  }
+}
+
+@keyframes fall-row-three {
+  0% {
+    transform: translateY(0px);
+    animation-timing-function: cubic-bezier(0.66, 0, 1, 0.72);
+  }
+  45% {
+    transform: translateY(400px);
+  }
+  50% {
+    transform: translateY(420px);
+  }
+  70% {
+    transform: translateY(350px);
+  }
+  80% {
+    transform: translateY(400px);
+  }
+  85% {
+    transform: translateY(420px);
+  }
+  90% {
+    transform: translateY(380px);
+  }
+  100% {
+    transform: translateY(420px);
+  }
+}
+
+@keyframes fall-row-four {
+  0% {
+    transform: translateY(0px);
+    animation-timing-function: cubic-bezier(0.66, 0, 1, 0.72);
+  }
+  45% {
+    transform: translateY(300px);
+  }
+  50% {
+    transform: translateY(310px);
+  }
+  70% {
+    transform: translateY(250px);
+  }
+  80% {
+    transform: translateY(300px);
+  }
+  85% {
+    transform: translateY(310px);
+  }
+  90% {
+    transform: translateY(280px);
+  }
+  100% {
+    transform: translateY(310px);
+  }
+}
+
+@keyframes fall-row-five {
+  0% {
+    transform: translateY(0px);
+    animation-timing-function: cubic-bezier(0.66, 0, 1, 0.72);
+  }
+  45% {
+    transform: translateY(115px);
+  }
+  50% {
+    transform: translateY(125px);
+  }
+  70% {
+    transform: translateY(110px);
+  }
+  80% {
+    transform: translateY(115px);
+  }
+  85% {
+    transform: translateY(125px);
+  }
+  90% {
+    transform: translateY(120px);
+  }
+  100% {
+    transform: translateY(125px);
+  }
+}
+
+.drop-row-one:hover {
+  animation-delay: 0.5s;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-name: fall-row-one;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.drop-row-two:hover {
+  animation-delay: 0.5s;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  animation-name: fall-row-two;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.drop-row-three:hover {
+  animation-delay: 0.5s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: fall-row-three;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.drop-row-four:hover {
+  animation-delay: 0.5s;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-name: fall-row-four;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.drop-row-five:hover {
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: fall-row-five;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.square:hover {
+  animation: spin 2s ease-out infinite;
+}
+
+@keyframes colorFlicker {
+  0% {
+    fill: default;
+  }
+  50% {
+    fill: #9497db;
+  }
+  100% {
+    fill: #d1d3f0;
+  }
+}
+
+.triangle:hover {
+  animation: colorFlicker 1s ease-in-out infinite;
+  animation-direction: alternate-reverse;
+}
