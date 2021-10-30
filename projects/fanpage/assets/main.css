@@ -1,0 +1,59 @@
+body {
+  background-color: #fff6df;
+}
+svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  width: 60%;
+  height: auto;
+}
+
+.gen-one {
+  display: none;
+}
+.gen-two {
+  display: none;
+}
+.gen-three {
+  display: none;
+}
+.gen-four {
+  display: none;
+}
+.gen-five {
+  display: none;
+}
+.gen-six {
+  display: none;
+}
+
+.selectable:hover {
+  stroke-width: 5px;
+  stroke: #f1c101;
+}
+
+.desc-one {
+  display: none;
+}
+
+.desc-two {
+  display: none;
+}
+
+.desc-three {
+  display: none;
+}
+
+.desc-four {
+  display: none;
+}
+
+.desc-five {
+  display: none;
+}
+
+.desc-six {
+  display: none;
+}

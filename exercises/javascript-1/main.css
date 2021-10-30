@@ -1,0 +1,25 @@
+body {
+  background-color: cornflowerblue;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: antiquewhite;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.light {
+  background-color: papayawhip;
+}
+
+.font {
+  font-family: "Courier New", Courier, monospace;
+  color: burlywood;
+}
