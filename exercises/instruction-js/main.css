@@ -1,0 +1,16 @@
+body {
+  background-color: #1b1b1e;
+  color: white;
+  font-family: arial;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-weight: normal;
+}
