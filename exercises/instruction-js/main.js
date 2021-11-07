@@ -6,7 +6,6 @@ let colors = [
     '#57799E',
     '#E7E9EE'
 ];
-
 document.body.addEventListener("mousemove", function (event) {
     let size = Math.floor(Math.random() * 60);
     let dot = document.createElement("span");
