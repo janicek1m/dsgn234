@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Pokemon Solid";
-  src: url("assets/fonts/PokemonSolidNormal.woff2") format("woff2"),
-    url("assets/fonts/PokemonSolidNormal.woff") format("woff");
+  src: url("fonts/PokemonSolidNormal.woff2") format("woff2"),
+    url("fonts/PokemonSolidNormal.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: "Pokemon GB";
-  src: url("assets/fonts/PokemonGB.woff2") format("woff2"),
-    url("assets/fonts/PokemonGB.woff") format("woff");
+  src: url("fonts/PokemonGB.woff2") format("woff2"),
+    url("fonts/PokemonGB.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: "Pokemon DP Pro";
-  src: url("assets/fonts/Pokmon-DP-Pro.woff2") format("woff2"),
-    url("assets/fonts/Pokmon-DP-Pro.woff") format("woff");
+  src: url("fonts/Pokmon-DP-Pro.woff2") format("woff2"),
+    url("fonts/Pokmon-DP-Pro.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -27,19 +27,17 @@
 
 @font-face {
   font-family: "VCR OSD Mono";
-  src: url("assets/fonts/VCROSDMono.woff2") format("woff2"),
-    url("assets/fonts/VCROSDMono.woff") format("woff");
+  src: url("fonts/VCROSDMono.woff2") format("woff2"),
+    url("fonts/VCROSDMono.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-
 @font-face {
   font-family: "Omega Ruby";
-  src: url("assets/fonts/OmegaRuby.woff2") format("woff2"),
-    url("assets/fonts/OmegaRuby.woff") format("woff");
+  src: url("fonts/OmegaRuby.woff2") format("woff2"),
+    url("fonts/OmegaRuby.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
