@@ -216,3 +216,88 @@ img {
   margin-right: 20px;
   color: #e92c14;
 }
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-family: "Pokemon Solid";
+    font-size: 5em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 0.2em;
+    margin-top: 30px;
+    -webkit-text-stroke: 2px #2c1e14;
+    text-shadow: 3px 3px 0 #2c1e14, -1px -1px 0 #2c1e14, 1px -1px 0 #2c1e14,
+      -1px 1px 0 #2c1e14, 1px 1px 0 #2c1e14;
+    color: #e9a327;
+  }
+  .content {
+    margin-top: 300px;
+    margin-left: 1rem;
+    margin-right: 0.75rem;
+    position: relative;
+  }
+
+  .year {
+    font-size: 50px;
+    font-weight: 700;
+    color: #e92c14;
+  }
+
+  .gameboy-year-1996 {
+    font-family: "Pokemon GB";
+    font-size: 40px;
+    color: #2c1e14;
+    margin-top: 30px;
+  }
+
+  .gameboy-year-1999 {
+    font-family: "Pokemon GB";
+    font-size: 40px;
+    margin-top: 30px;
+    color: #cb9b03;
+  }
+
+  .year-2006 {
+    font-family: "VCR OSD Mono";
+    font-size: 60px;
+    margin-top: 8px;
+    margin-right: 35px;
+    color: #e92c14;
+  }
+
+  .gameboy-year {
+    font-family: "Pokemon GB";
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  .desc h3 {
+    font-size: 1.5em;
+    max-width: 830px;
+    color: #2c1e14;
+  }
+
+  .desc p {
+    margin-top: 0;
+    margin-bottom: 0.3em;
+    max-width: 90%;
+  }
+
+  img {
+    display: block;
+    position: absolute;
+    left: 30%;
+    top: -17.5rem;
+    height: 250px;
+    width: auto;
+    z-index: 3;
+  }
+
+  .year-2014 {
+    font-family: "Omega Ruby";
+    font-size: 160px;
+    margin-top: 1px;
+    margin-left: 20px;
+    color: #e92c14;
+  }
+}
