@@ -217,7 +217,7 @@ img {
   color: #e92c14;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .title {
     font-family: "Pokemon Solid";
     font-size: 5em;
