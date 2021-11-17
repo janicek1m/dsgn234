@@ -1,0 +1,50 @@
+body {
+  background-color: blue;
+  margin: 0;
+}
+
+.teen-show-container {
+  background-color: black;
+  color: white;
+  width: 100vw;
+  /*height:  50vh;*/
+}
+
+.show {
+  font-size: 50px;
+  padding: 20px;
+  background-color: white;
+  color: black;
+}
+
+.year {
+  color: grey;
+}
+
+.show:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.year-button {
+  background-color: blue;
+  color: white;
+  border-radius: 50px;
+  max-width: 200px;
+  text-align: center;
+  font-family: arial;
+  font-size: 20px;
+  position: fixed;
+  top: -20px;
+  right: 50px;
+  padding: 50px;
+  transition: background-color 400ms ease;
+}
+
+.year-button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+.sorted {
+  background-color: red;
+}

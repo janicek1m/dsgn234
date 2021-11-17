@@ -1,0 +1,55 @@
+body {
+  background-color: #302c23;
+  color: #db965d;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  padding: 20px;
+  align-items: center;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+h6 {
+  text-align: center;
+}
+
+svg {
+  display: block;
+  margin: auto;
+  position: absolute;
+  left: 420px;
+}
+
+img {
+  position: absolute;
+  top: 265px;
+  left: 520px;
+  z-index: -1;
+  width: 398px;
+}
+
+.tick {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.domain {
+  display: none;
+}
+
+line {
+  display: none;
+}
+.rectangle {
+  transition: fill 500ms ease;
+}
+
+.rectangle:hover {
+  fill: #ff6af5;
+  cursor: pointer;
+}
