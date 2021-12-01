@@ -1,0 +1,9 @@
+body {
+    background-color: cornflowerblue;
+    align-items: center;
+}
+model-viewer {
+  width: 800px;
+  height: 600px;
+  margin: auto auto auto auto;
+}
