@@ -90,7 +90,8 @@ function drawNotes (){
         }
         img.style.height = "149px";
         img.style.position = "absolute";
-        var leftPos = (width - 1265) / 2;
+        var leftPos = (window.innerWidth - 1265) / 2;
+        console.log(window.innerWidth);
         if (data[i].noteNumber == 1) {
           leftPos += 110;
         } else if (data[i].noteNumber == 2) {

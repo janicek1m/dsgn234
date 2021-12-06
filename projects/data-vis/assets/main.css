@@ -44,6 +44,7 @@ p {
 
 .staff-1 {
   display: inline-block;
+  background-color: aliceblue;
 }
 
 svg {
