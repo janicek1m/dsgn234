@@ -1,0 +1,144 @@
+body {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+li {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-bottom: 2px;
+}
+
+.heading {
+  margin-top: -5em;
+  margin-bottom: 10em;
+}
+
+.heading h1 {
+  font-weight: bold;
+  font-size: 54.51px;
+  line-height: 63px;
+}
+
+.heading h3 {
+  margin-top: -20px;
+  font-weight: normal;
+  font-size: 27.2571px;
+  line-height: 31px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: -10px;
+}
+
+p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.music-container {
+  position: relative;
+}
+
+svg {
+  margin-bottom: 150px;
+}
+
+.info-btn {
+  display: flex;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.info-btn:hover {
+  animation: original 1.5s ease-in-out infinite alternate;
+}
+
+.original:hover {
+  animation: original 1.5s ease-in-out infinite alternate;
+}
+
+.after:hover {
+  animation: after 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes original {
+  from {
+    filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 7.5px #5c9ead)
+      drop-shadow(0 0 10px #5c9ead);
+  }
+
+  to {
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #5c9ead)
+      drop-shadow(0 0 20px #5c9ead);
+  }
+}
+
+@keyframes after {
+  from {
+    filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 7.5px #b8b8b8)
+      drop-shadow(0 0 10px #b8b8b8);
+  }
+
+  to {
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #b8b8b8)
+      drop-shadow(0 0 20px #b8b8b8);
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 144px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  margin-top: -10%;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  transform: translate(0px, -50px);
+  transition: all 0.7s cubic-bezier(0.59, -0.17, 0.3, 1.67);
+  position: relative;
+  padding: 30px;
+  width: 600px;
+  background-color: #ffffff;
+  border-style: none;
+  text-align: left;
+  overflow: hidden;
+}
+
+.close-btn {
+  border: none;
+  position: absolute;
+  padding: 10px 10px;
+  font-size: 24px;
+  background-color: #ffffff;
+  color: #000000;
+  top: -1px;
+  right: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+i:hover {
+  animation: original 1.5s ease-in-out infinite alternate;
+}
+
+.note-small {
+  display: inline;
+  height: 15px;
+}
