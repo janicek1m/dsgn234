@@ -147,8 +147,8 @@ function drawNotes (){
             img.classList.remove("original");
             img.classList.add("after");
         }, false);
-
-        document.querySelector(".staff-" + data[i].staff).appendChild(img);
+        let staff = ".staff-" + data[i].staff;
+        document.querySelector(staff).appendChild(img);
     }    
 }
 drawNotes();
