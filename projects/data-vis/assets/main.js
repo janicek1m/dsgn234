@@ -150,6 +150,7 @@ overlay.style.width = window.innerWidth;
 var infoBtn = document.querySelector(".info-btn");
 infoBtn.addEventListener("click", function(){ 
     document.querySelector(".overlay").classList.add("is-open");
+    document.querySelector(".overlay").style.height = "150%";
     disableScroll();
 }, false);
 
