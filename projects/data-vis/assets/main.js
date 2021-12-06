@@ -6,6 +6,18 @@ var quarterBottomSrc = "assets/notes/quarter-bottom.png";
 var quarterTopSrc = "assets/notes/quarter-top.png";
 var restSrc = "assets/notes/rest.png";
 
+
+var body = document.body,
+    html = document.documentElement;
+var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+var width = Math.max(
+    document.body.scrollWidth,
+    document.documentElement.scrollWidth,
+    document.body.offsetWidth,
+    document.documentElement.offsetWidth,
+    document.documentElement.clientWidth
+  );
+
 const data = [ 
     { type: 'eighthBottom', staff: 1, measure: 1, noteNumber: 1, top: 1, audio:"" },
     { type: 'eighthBottom', staff: 1, measure: 1, noteNumber: 2, top: 2, audio:""  },
@@ -78,44 +90,44 @@ function drawNotes (){
         }
         img.style.height = "149px";
         img.style.position = "absolute";
-        var leftPos = 0;
+        var leftPos = (width - 1265) / 2;
         if (data[i].noteNumber == 1) {
-          leftPos = 190;
+          leftPos += 110;
         } else if (data[i].noteNumber == 2) {
-          leftPos = 295;
+          leftPos += 215;
         } else if (data[i].noteNumber == 3) {
-          leftPos = 400;
+          leftPos += 320;
         } else if (data[i].noteNumber == 4) {
-          leftPos = 505;
+          leftPos += 425;
         } else if (data[i].noteNumber == 5) {
-          leftPos = 610;
+          leftPos += 530;
         }
 
         if (data[i].measure == 2) {
-            leftPos+= 590;
+            leftPos+= 580;
         }
 
         var topPos = 0;
         if (data[i].top == 1) {
-            topPos = 392;
+            topPos = -11;
         } else if (data[i].top == 2) {
-            topPos = 379;
+            topPos = -23;
         } else if (data[i].top == 3) {
-            topPos = 364;
+            topPos = -40;
         } else if (data[i].top == 4) {
-            topPos = 350;
+            topPos = -52;
         } else if (data[i].top == 5) {
-            topPos = 336;
+            topPos = -66;
         } else if (data[i].top == 6) {
-            topPos = 443;
+            topPos = 41;
         } else if (data[i].top == 7) {
-            topPos = 430;
+            topPos = 28;
         } else if (data[i].top == 8) {
-            topPos = 413;
+            topPos = 13;
         } else if (data[i].top == 9) {
-            topPos = 403;
+            topPos = 0;
         } else if (data[i].top == 10) {
-            topPos = 391;
+            topPos = -14;
         }
 
         if (data[i].staff == 2) {
@@ -134,14 +146,12 @@ function drawNotes (){
             img.classList.remove("original");
             img.classList.add("after");
         }, false);
-        document.querySelector(".music-container").appendChild(img);
+
+        document.querySelector(".staff-" + data[i].staff).appendChild(img);
     }    
 }
 drawNotes();
 
-var body = document.body,
-    html = document.documentElement;
-var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
 
 var overlay = document.querySelector(".overlay");
 overlay.style.height = height;

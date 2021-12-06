@@ -42,8 +42,12 @@ p {
   position: relative;
 }
 
+.staff-1 {
+  display: inline-block;
+}
+
 svg {
-  margin-bottom: 150px;
+  padding-bottom: 150px;
 }
 
 .info-btn {
