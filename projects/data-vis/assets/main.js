@@ -11,52 +11,52 @@ var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, h
 var width = Math.max(document.body.scrollWidth, document.documentElement.scrollWidth, document.body.offsetWidth, document.documentElement.offsetWidth, document.documentElement.clientWidth);
 
 const data = [ 
-    { type: 'eighthBottom', staff: 1, measure: 1, noteNumber: 1, top: 2, audio:"assets/audio/one.mp3", title:"5 min." },
-    { type: 'quarterTop', staff: 1, measure: 1, noteNumber: 2, top: 7, audio:"assets/audio/one.mp3", title:"15 min."  },
-    { type: 'halfBottom', staff: 1, measure: 1, noteNumber: 3, top: 3, audio:"assets/audio/one.mp3", title:"30 min."  },
-    { type: 'eighthTop', staff: 1, measure: 1, noteNumber: 4, top: 8, audio:"assets/audio/one.mp3", title:"10 min."  },
+    { type: 'eighthBottom', staff: 1, measure: 1, noteNumber: 1, top: 2, audio:"assets/audio/1.1.mp3", title:"5 min." },
+    { type: 'quarterTop', staff: 1, measure: 1, noteNumber: 2, top: 7, audio:"assets/audio/1.2.mp3", title:"15 min."  },
+    { type: 'halfBottom', staff: 1, measure: 1, noteNumber: 3, top: 3, audio:"assets/audio/1.3.mp3", title:"30 min."  },
+    { type: 'eighthTop', staff: 1, measure: 1, noteNumber: 4, top: 8, audio:"assets/audio/1.4.mp3", title:"10 min."  },
     { type: 'rest', staff: 1, measure: 1, noteNumber: 5, top: 2, audio:"", title:"5 min."  },
 
-    { type: 'halfTop', staff: 1, measure: 2, noteNumber: 1, top: 6, audio:"assets/audio/one.mp3", title:"35 min." },
+    { type: 'halfTop', staff: 1, measure: 2, noteNumber: 1, top: 6, audio:"assets/audio/2.1.mp3", title:"35 min." },
     { type: 'rest', staff: 1, measure: 2, noteNumber: 2, top: 2, audio:"", title:"15 min." },
-    { type: 'quarterBottom', staff: 1, measure: 2, noteNumber: 3, top: 2, audio:"assets/audio/one.mp3", title:"20 min." },
-    { type: 'quarterTop', staff: 1, measure: 2, noteNumber: 4, top: 7, audio:"assets/audio/one.mp3", title:"15 min." },
-    { type: 'quarterTop', staff: 1, measure: 2, noteNumber: 5, top: 6, audio:"assets/audio/one.mp3", title:"15 min."  },
+    { type: 'quarterBottom', staff: 1, measure: 2, noteNumber: 3, top: 2, audio:"assets/audio/2.3.mp3", title:"20 min." },
+    { type: 'quarterTop', staff: 1, measure: 2, noteNumber: 4, top: 7, audio:"assets/audio/2.4.mp3", title:"15 min." },
+    { type: 'quarterTop', staff: 1, measure: 2, noteNumber: 5, top: 6, audio:"assets/audio/1.5.mp3", title:"15 min."  },
 
-    { type: 'quarterTop', staff: 2, measure: 1, noteNumber: 1, top: 7, audio:"assets/audio/one.mp3", title:"10 min." },
-    { type: 'quarterTop', staff: 2, measure: 1, noteNumber: 2, top: 6, audio:"assets/audio/one.mp3", title:"15 min." },
-    { type: 'eighthBottom', staff: 2, measure: 1, noteNumber: 3, top: 3, audio:"assets/audio/one.mp3", title:"8 min." },
-    { type: 'eighthBottom', staff: 2, measure: 1, noteNumber: 4, top: 4, audio:"assets/audio/one.mp3", title:"8 min." },
-    { type: 'eighthBottom', staff: 2, measure: 1, noteNumber: 5, top: 1, audio:"assets/audio/one.mp3", title:"10 min." },
+    { type: 'quarterTop', staff: 2, measure: 1, noteNumber: 1, top: 7, audio:"assets/audio/3.1.mp3", title:"10 min." },
+    { type: 'quarterTop', staff: 2, measure: 1, noteNumber: 2, top: 6, audio:"assets/audio/2.2.mp3", title:"15 min." },
+    { type: 'eighthBottom', staff: 2, measure: 1, noteNumber: 3, top: 3, audio:"assets/audio/3.3.mp3", title:"8 min." },
+    { type: 'eighthBottom', staff: 2, measure: 1, noteNumber: 4, top: 4, audio:"assets/audio/3.4.mp3", title:"8 min." },
+    { type: 'eighthBottom', staff: 2, measure: 1, noteNumber: 5, top: 1, audio:"assets/audio/2.5.mp3", title:"10 min." },
 
     { type: 'rest', staff: 2, measure: 2, noteNumber: 1, top: 2, audio:"", title:"10 min." },
-    { type: 'eighthBottom', staff: 2, measure: 2, noteNumber: 2, top: 2, audio:"assets/audio/one.mp3", title:"5 min." },
+    { type: 'eighthBottom', staff: 2, measure: 2, noteNumber: 2, top: 2, audio:"assets/audio/3.2.mp3", title:"5 min." },
     { type: 'rest', staff: 2, measure: 2, noteNumber: 3, top: 2, audio:"", title:"5 min." },
-    { type: 'halfBottom', staff: 2, measure: 2, noteNumber: 4, top: 4, audio:"assets/audio/one.mp3", title:"35 min." },
-    { type: 'halfBottom', staff: 2, measure: 2, noteNumber: 5, top: 1, audio:"assets/audio/one.mp3", title:"45 min." },
+    { type: 'halfBottom', staff: 2, measure: 2, noteNumber: 4, top: 4, audio:"assets/audio/4.4.mp3", title:"35 min." },
+    { type: 'halfBottom', staff: 2, measure: 2, noteNumber: 5, top: 1, audio:"assets/audio/3.5.mp3", title:"45 min." },
 
-    { type: 'halfTop', staff: 3, measure: 1, noteNumber: 1, top: 6, audio:"assets/audio/one.mp3", title:"30 min." },
-    { type: 'quarterBottom', staff: 3, measure: 1, noteNumber: 2, top: 4, audio:"assets/audio/one.mp3", title:"15 min." },
-    { type: 'quarterTop', staff: 3, measure: 1, noteNumber: 3, top: 8, audio:"assets/audio/one.mp3", title:"12 min." },
+    { type: 'halfTop', staff: 3, measure: 1, noteNumber: 1, top: 6, audio:"assets/audio/4.1.mp3", title:"30 min." },
+    { type: 'quarterBottom', staff: 3, measure: 1, noteNumber: 2, top: 4, audio:"assets/audio/4.2.mp3", title:"15 min." },
+    { type: 'quarterTop', staff: 3, measure: 1, noteNumber: 3, top: 8, audio:"assets/audio/4.3.mp3", title:"12 min." },
     { type: 'rest', staff: 3, measure: 1, noteNumber: 4, top: 2, audio:"", title:"10 min." },
-    { type: 'eighthTop', staff: 3, measure: 1, noteNumber: 5, top: 10, audio:"assets/audio/one.mp3", title:"5 min." },
+    { type: 'eighthTop', staff: 3, measure: 1, noteNumber: 5, top: 10, audio:"assets/audio/4.5.mp3", title:"5 min." },
 
-    { type: 'eighthTop', staff: 3, measure: 2, noteNumber: 1, top: 6, audio:"assets/audio/one.mp3", title:"5 min." },
+    { type: 'eighthTop', staff: 3, measure: 2, noteNumber: 1, top: 6, audio:"assets/audio/5.1.mp3", title:"5 min." },
     { type: 'rest', staff: 3, measure: 2, noteNumber: 2, top: 2, audio:"",  title:"5 min."  },
-    { type: 'eighthBottom', staff: 3, measure: 2, noteNumber: 3, top: 3, audio:"assets/audio/one.mp3",  title:"10 min." },
-    { type: 'eighthBottom', staff: 3, measure: 2, noteNumber: 4, top: 2, audio:"assets/audio/one.mp3",  title:"10 min." },
-    { type: 'eighthBottom', staff: 3, measure: 2, noteNumber: 5, top: 5, audio:"assets/audio/one.mp3",  title:"10 min." },
+    { type: 'eighthBottom', staff: 3, measure: 2, noteNumber: 3, top: 3, audio:"assets/audio/5.3.mp3",  title:"10 min." },
+    { type: 'eighthBottom', staff: 3, measure: 2, noteNumber: 4, top: 2, audio:"assets/audio/5.4.mp3",  title:"10 min." },
+    { type: 'eighthBottom', staff: 3, measure: 2, noteNumber: 5, top: 5, audio:"assets/audio/5.5.mp3",  title:"10 min." },
 
-    { type: 'quarterTop', staff: 4, measure: 1, noteNumber: 1, top: 6, audio:"assets/audio/one.mp3",  title:"15 min." },
-    { type: 'halfTop', staff: 4, measure: 1, noteNumber: 2, top: 7, audio:"assets/audio/one.mp3",  title:"25 min." },
-    { type: 'halfBottom', staff: 4, measure: 1, noteNumber: 3, top: 3, audio:"assets/audio/one.mp3",  title:"30 min." },
-    { type: 'quarterTop', staff: 4, measure: 1, noteNumber: 4, top: 10, audio:"assets/audio/one.mp3", title:"12 min." },
+    { type: 'quarterTop', staff: 4, measure: 1, noteNumber: 1, top: 6, audio:"assets/audio/6.1.mp3",  title:"15 min." },
+    { type: 'halfTop', staff: 4, measure: 1, noteNumber: 2, top: 7, audio:"assets/audio/5.2.mp3",  title:"25 min." },
+    { type: 'halfBottom', staff: 4, measure: 1, noteNumber: 3, top: 3, audio:"assets/audio/6.3.mp3",  title:"30 min." },
+    { type: 'quarterTop', staff: 4, measure: 1, noteNumber: 4, top: 10, audio:"assets/audio/6.4.mp3", title:"12 min." },
     { type: 'rest', staff: 4, measure: 1, noteNumber: 5, top: 2, audio:"",  title:"5 min." },
 
-    { type: 'eighthBottom', staff: 4, measure: 2, noteNumber: 1, top: 1, audio:"assets/audio/one.mp3", title:"2 min."},
-    { type: 'eighthTop', staff: 4, measure: 2, noteNumber: 2, top: 2, audio:"assets/audio/one.mp3",  title:"8 min." },
+    { type: 'eighthBottom', staff: 4, measure: 2, noteNumber: 1, top: 1, audio:"assets/audio/7.1.mp3", title:"2 min."},
+    { type: 'eighthTop', staff: 4, measure: 2, noteNumber: 2, top: 2, audio:"assets/audio/6.2.mp3",  title:"8 min." },
     { type: 'rest', staff: 4, measure: 2, noteNumber: 3, top: 2, audio:"",  title:"5 min." },
-    { type: 'halfBottom', staff: 4, measure: 2, noteNumber: 4, top: 9, audio:"assets/audio/one.mp3",  title:"50 min." },
+    { type: 'halfBottom', staff: 4, measure: 2, noteNumber: 4, top: 9, audio:"assets/audio/7.4.mp3",  title:"50 min." },
     { type: 'rest', staff: 4, measure: 2, noteNumber: 5, top: 2, audio:"",  title:"5 min." },
 ];
 
@@ -162,13 +162,17 @@ function drawNotes (){
         div.style.left = divLeft + "px";
         div.classList.add("tooltip");
 
-        img.addEventListener("click", function(){ 
+        const audio = new Audio(data[i].audio);
+
+        img.addEventListener("click", function(){
+            audio.volume = 0.2;
+            audio.play(); 
             img.classList.remove("original");
             img.classList.add("after");
         }, false);
 
-        const audio = new Audio(data[i].audio);
-        img.addEventListener("mouseenter", function() {
+        // const audio = new Audio(data[i].audio);
+        img.addEventListener("mouseover", function() {
             if (img.classList.contains("after")) {
                 audio.volume = 0.2;
                 audio.play();
