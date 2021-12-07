@@ -52,6 +52,7 @@ svg {
 
 .info-btn {
   display: flex;
+  cursor: help;
   margin-left: auto;
   padding-top: 10px;
   padding-right: 10px;
@@ -63,6 +64,7 @@ svg {
 
 .original:hover {
   animation: original 1.5s ease-in-out infinite alternate;
+  cursor: pointer;
 }
 
 .after:hover {
@@ -117,7 +119,7 @@ svg {
   transform: translate(0px, -50px);
   transition: all 0.7s cubic-bezier(0.59, -0.17, 0.3, 1.67);
   position: relative;
-  padding: 30px;
+  padding: 40px;
   width: 600px;
   background-color: #ffffff;
   border-style: none;
@@ -145,4 +147,27 @@ i:hover {
 .note-small {
   display: inline;
   height: 15px;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip {
+  text-align: center;
+}
+
+.tooltip p {
+  background-color: #000000;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
