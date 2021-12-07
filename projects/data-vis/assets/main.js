@@ -6,17 +6,9 @@ var quarterBottomSrc = "assets/notes/quarter-bottom.png";
 var quarterTopSrc = "assets/notes/quarter-top.png";
 var restSrc = "assets/notes/rest.png";
 
-
-var body = document.body,
-    html = document.documentElement;
+var body = document.body, html = document.documentElement;
 var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
-var width = Math.max(
-    document.body.scrollWidth,
-    document.documentElement.scrollWidth,
-    document.body.offsetWidth,
-    document.documentElement.offsetWidth,
-    document.documentElement.clientWidth
-  );
+var width = Math.max(document.body.scrollWidth, document.documentElement.scrollWidth, document.body.offsetWidth, document.documentElement.offsetWidth, document.documentElement.clientWidth);
 
 const data = [ 
     { type: 'eighthBottom', staff: 1, measure: 1, noteNumber: 1, top: 2, audio:"assets/audio/one.mp3" },
@@ -66,7 +58,6 @@ const data = [
     { type: 'rest', staff: 4, measure: 2, noteNumber: 3, top: 2, audio:""  },
     { type: 'eighthTop', staff: 4, measure: 2, noteNumber: 4, top: 9, audio:"assets/audio/one.mp3"  },
     { type: 'rest', staff: 4, measure: 2, noteNumber: 5, top: 2, audio:""  },
-
 ];
 
 function drawNotes (){
@@ -142,18 +133,26 @@ function drawNotes (){
         img.style.top = topPos + "px";
         img.classList.add("original");
 
-        const audio = new Audio(data[i].audio);
         img.addEventListener("click", function(){ 
             alert("clicked"); 
-            var sounds = document.getElementsByTagName('audio');
-            for (i = 0; i < sounds.length; i ++) {
-                sounds[i].pause();
-            }
             img.classList.remove("original");
-            audio.volume = 0.2;
-            audio.play();
             img.classList.add("after");
         }, false);
+
+        const audio = new Audio(data[i].audio);
+        img.addEventListener("mouseenter", function() {
+            if (img.classList.contains("after")) {
+                audio.volume = 0.2;
+                audio.play();
+            }
+        }, false);
+
+        img.addEventListener("mouseleave", function() {
+            if (img.classList.contains("after")) {
+                audio.pause();
+            }
+        }, false);
+
         let staff = ".staff-" + data[i].staff;
         document.querySelector(staff).appendChild(img);
     }    
